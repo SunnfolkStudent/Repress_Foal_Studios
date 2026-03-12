@@ -42,13 +42,24 @@ public class GameController : MonoBehaviour
        }
    }
 
+   
    public event Action onPlayerHide;
-
    public void PlayerHide()
    {
+       Debug.Log(" attempting to PlayerHide");
        if (onPlayerHide != null)
        {
            onPlayerHide();
+       }
+   }
+
+   public event Action onSpiritVision;
+
+   public void SpiritVision()
+   {
+       if (onSpiritVision != null)
+       {
+           onSpiritVision();
        }
    }
 

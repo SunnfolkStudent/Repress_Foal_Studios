@@ -1,5 +1,6 @@
 using Player;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -19,7 +20,10 @@ public class PlayerManager : MonoBehaviour
     {
         if (_input.interact)
         {
-            GameController.instance.PlayerHide();
+           GameController.instance.PlayerHide();
+           
         }
+
+
     }
 }

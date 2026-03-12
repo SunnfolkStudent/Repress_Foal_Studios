@@ -3,16 +3,19 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    private InputSystem_Actions _inputSystemActions;
+    private InputSystem_Actions _input;
 
     public bool interact;
+    public float Horizontal, Vertical;
     
-    private void Awake() => _inputSystemActions = new InputSystem_Actions();
-    private void OnEnable() => _inputSystemActions = new InputSystem_Actions();
-    private void OnDisable() => _inputSystemActions = new InputSystem_Actions();
+    private void Awake() => _input = new InputSystem_Actions();
+    private void OnEnable() => _input.Enable();
+    private void OnDisable() => _input.Disable();
 
     private void Update()
     {
-        interact = _inputSystemActions.Player.Interact.WasPressedThisFrame();
+        interact = _input.Player.Interact.WasPressedThisFrame();
+        Horizontal = _input.Player.Move.ReadValue<Vector2>().x;
+        Vertical = _input.Player.Move.ReadValue<Vector2>().y;
     }
 }
