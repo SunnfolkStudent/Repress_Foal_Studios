@@ -23,7 +23,6 @@ public class PlayerManager : MonoBehaviour
     {
         if (_input.interact) GameController.instance.PlayerHide();
         if(_input.spiritVision) GameController.instance.SpiritVision();
-        
         _playerMovement.SetMoveDirection(_rb,  _moveSpeed);
         
     }

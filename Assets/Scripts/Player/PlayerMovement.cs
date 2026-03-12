@@ -23,10 +23,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetMoveDirection( Rigidbody2D _rb, float moveSpeed)
     {
-        Debug.Log("Set move direction");
+        
         if (Mathf.Abs(Gamepad.current.leftStick.value.x) >= 0 || (Mathf.Abs(Gamepad.current.leftStick.value.y) >= 0))
         {
-            Debug.Log("Controller Active");
+            
             if (Mathf.Abs(_input.Horizontal) > Mathf.Abs(_input.Vertical))
             {
                 _rb.linearVelocityX = moveSpeed * _input.Horizontal;
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            Debug.Log("keyboard Active");
+           
             if (Gamepad.current != null)
             {
                 LRUD[0] = Keyboard.current.aKey.isPressed || Gamepad.current.dpad.left.isPressed ? true : false;

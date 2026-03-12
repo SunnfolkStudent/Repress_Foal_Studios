@@ -10,6 +10,8 @@ public class GameController : MonoBehaviour
     public bool winStateTriggered;
     //Mechanics
     public bool playerIsHidden;
+    public bool PlayerVisionOn;
+    public bool gameIsPaused;
     public  Vector3 activeCheckpointPosition;
     public Canvas RestartOrMenuCanvas;
       
@@ -46,7 +48,6 @@ public class GameController : MonoBehaviour
    public event Action onPlayerHide;
    public void PlayerHide()
    {
-       Debug.Log(" attempting to PlayerHide");
        if (onPlayerHide != null)
        {
            onPlayerHide();
@@ -54,7 +55,6 @@ public class GameController : MonoBehaviour
    }
 
    public event Action onSpiritVision;
-
    public void SpiritVision()
    {
        if (onSpiritVision != null)
