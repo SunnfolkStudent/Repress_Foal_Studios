@@ -5,7 +5,6 @@ namespace Player
     public class PlayerInteract  : MonoBehaviour
     {
         [SerializeField] private float _interactRadius = 3f;
-        [SerializeField] private int _interactLayer = 1 << 6;
         private void Start()
         {
             
@@ -21,7 +20,7 @@ namespace Player
             {
                 Debug.Log("PlayerHide");
                 
-                Collider2D hit = Physics2D.OverlapCircle(transform.position, _interactRadius, _interactLayer);
+                Collider2D hit = Physics2D.OverlapCircle(transform.position, _interactRadius, 1 << 6);
                 if (hit != null)
                 {
                     var targetPosition = hit.transform.position;

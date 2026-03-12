@@ -5,25 +5,26 @@ using UnityEngine.InputSystem;
 public class PlayerManager : MonoBehaviour
 {
     private InputManager _input;
-    private PlayerInteract _playerInteract;
+    private PlayerMovement _playerMovement;
+    private Rigidbody2D _rb;
+    
+    [SerializeField] private float _moveSpeed = 5f;
     
     
     void Start()
     {
         _input = GetComponent<InputManager>();
-        _playerInteract = GetComponent<PlayerInteract>();
-        
+        _playerMovement = GetComponent<PlayerMovement>();
+        _rb = GetComponent<Rigidbody2D>();
     }
     
 
     void Update()
     {
-        if (_input.interact)
-        {
-           GameController.instance.PlayerHide();
-           
-        }
-
-
+        if (_input.interact) GameController.instance.PlayerHide();
+        if(_input.spiritVision) GameController.instance.SpiritVision();
+        
+        _playerMovement.SetMoveDirection(_rb,  _moveSpeed);
+        
     }
 }
