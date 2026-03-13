@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public void SetMoveDirection( Rigidbody2D _rb, float moveSpeed)
     {
         
-        if (Mathf.Abs(Gamepad.current.leftStick.value.x) >= 0 || (Mathf.Abs(Gamepad.current.leftStick.value.y) >= 0))
+        if (Mathf.Abs(Gamepad.current.leftStick.value.x) >= 0.12f || (Mathf.Abs(Gamepad.current.leftStick.value.y) >= 0.12))
         {
             
             if (Mathf.Abs(_input.Horizontal) > Mathf.Abs(_input.Vertical))
