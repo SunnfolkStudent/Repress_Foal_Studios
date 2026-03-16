@@ -163,7 +163,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Tileable_Background_1
+    - name: City_BG_tile_1
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
