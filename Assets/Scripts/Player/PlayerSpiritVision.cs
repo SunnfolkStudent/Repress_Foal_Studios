@@ -10,7 +10,7 @@ public class PlayerSpiritVision : MonoBehaviour
     private ColorAdjustments _colorAdjustments;
     public Color filterColor;
     public Color originalfilterColor;
-    public bool toggleOn;
+    
 
     private void Start()
     {
@@ -20,19 +20,21 @@ public class PlayerSpiritVision : MonoBehaviour
 
     private void UpdateSpiritVision()
     {
-        Debug.Log("UpdateSpiritVision");
-        if (toggleOn)
+        
+        if (!GameController.instance.playerVisionOn)
         {
             screenFilterVolume.profile.TryGet(out ColorAdjustments _colorAdjustment);
             if (_colorAdjustment != null) _colorAdjustment.colorFilter.value = filterColor;
+            Debug.Log("Spirit Vision on");
+            GameController.instance.playerVisionOn = true;
             
-            toggleOn = false;
         }
-        else if (!toggleOn)
+        else if (GameController.instance.playerVisionOn)
         {
             screenFilterVolume.profile.TryGet(out ColorAdjustments _colorAdjustment);
             if (_colorAdjustment != null) _colorAdjustment.colorFilter.value = originalfilterColor;
-            toggleOn = true;
+            GameController.instance.playerVisionOn = false;
+            Debug.Log("Spirit Vision off");
         }
     }
 }

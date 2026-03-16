@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class GameController : MonoBehaviour
 {
@@ -8,12 +8,13 @@ public class GameController : MonoBehaviour
     //Conditions
     public bool failStateTriggered;
     public bool winStateTriggered;
+
+    public bool freezeMovement = false;
     //Mechanics
-    public bool playerIsHidden;
-    public bool PlayerVisionOn;
+    public bool playerHidden;
+    public bool playerVisionOn;
     public bool gameIsPaused;
-    public  Vector3 activeCheckpointPosition;
-    public Canvas RestartOrMenuCanvas;
+    public Vector3 activeCheckpointPosition;
       
    private void Awake()
        {
@@ -28,22 +29,6 @@ public class GameController : MonoBehaviour
            }
        }
 
-   public void ReturnToChekpoint()
-   {
-       RestartOrMenuCanvas.gameObject.SetActive(false);
-       failStateTriggered = false;
-    
-       var player = GameObject.FindGameObjectWithTag("Player");
-       if (player != null && activeCheckpointPosition != Vector3.zero)
-       {
-           player.transform.position = activeCheckpointPosition;
-       }
-       else
-       {
-           SceneManager.LoadScene("Scenes/DevScene");
-       }
-   }
-
    
    public event Action onPlayerHide;
    public void PlayerHide()
@@ -53,6 +38,15 @@ public class GameController : MonoBehaviour
            onPlayerHide();
        }
    }
+   public event Action onPlayerHideExit;
+
+   public void PlayerHideExit()
+   {
+       if (onPlayerHideExit != null)
+       {
+           onPlayerHideExit();
+       }
+   }
 
    public event Action onSpiritVision;
    public void SpiritVision()
@@ -60,6 +54,15 @@ public class GameController : MonoBehaviour
        if (onSpiritVision != null)
        {
            onSpiritVision();
+       }
+   }
+   public event Action onFailStateActive;
+   public void FailStateActive()
+   {
+       if (onFailStateActive != null)
+       {
+           Debug.Log("FailstateActive");
+           onFailStateActive();
        }
    }
 

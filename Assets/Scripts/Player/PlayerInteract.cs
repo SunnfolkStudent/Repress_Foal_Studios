@@ -5,38 +5,38 @@ namespace Player
     public class PlayerInteract  : MonoBehaviour
     {
         [SerializeField] private float _interactRadius = 3f;
+
+        private Vector3 _enterPosition;
         private void Start()
         {
             
             GameController.instance.onPlayerHide += UpdateHide;
+            GameController.instance.onPlayerHideExit += UpdateHideExit;
 
         }
 
-        public void UpdateHide()
+        private void UpdateHide()
         {
-            var enterPosition = transform.position;
-            
-            if (!GameController.instance.playerIsHidden)
+            _enterPosition = transform.position;
+            Collider2D hit = Physics2D.OverlapCircle(transform.position, _interactRadius, 1 << 6);
+            if (hit != null)
             {
-                Debug.Log("PlayerHide");
+                var targetPosition = hit.transform.position;
+                transform.position = targetPosition;
                 
-                Collider2D hit = Physics2D.OverlapCircle(transform.position, _interactRadius, 1 << 6);
-                if (hit != null)
-                {
-                    var targetPosition = hit.transform.position;
-                    transform.position = targetPosition;
-                    
-                    GameController.instance.playerIsHidden = true;
-                    
-                }
+                GameController.instance.playerHidden = true;
+                
+                Debug.Log ("the player is hidden");
+            }
+           
+            
+        }
 
-            }
-            else
-            {
-                Debug.Log("PlayerExitHide");
-                GameController.instance.playerIsHidden = false;
-                transform.position = enterPosition;
-            }
+        private void UpdateHideExit()
+        {
+            transform.position = _enterPosition;
+            GameController.instance.playerHidden = false;
+            Debug.Log ("the player is not hidden");
         }
     }
 }

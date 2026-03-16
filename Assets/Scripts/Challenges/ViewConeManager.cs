@@ -3,7 +3,7 @@ using UnityEngine;
 public class ViewConeManager : MonoBehaviour
 {
     private GameObject _viewCone;
-   
+    
     void Start()
     {
         
@@ -14,7 +14,15 @@ public class ViewConeManager : MonoBehaviour
 
     void UpdateViewConeVisibility()
     {
-        if (GameController.instance.PlayerVisionOn) _viewCone.GetComponent<SpriteRenderer>().enabled = false;
-        else _viewCone.GetComponent<SpriteRenderer>().enabled = true;
+        if (GameController.instance.playerVisionOn)
+        {
+            _viewCone.GetComponent<SpriteRenderer>().enabled = true;
+        }
+        else
+        {
+            _viewCone.GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
+    
+    
 }

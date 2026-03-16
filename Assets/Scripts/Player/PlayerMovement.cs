@@ -23,8 +23,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetMoveDirection(Rigidbody2D _rb, float moveSpeed)
     {
-        Debug.Log(_rb);
-        
         if (Gamepad.current != null)
         {
             //Deadzone

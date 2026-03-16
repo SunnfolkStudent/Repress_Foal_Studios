@@ -21,9 +21,24 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        if (_input.interact) GameController.instance.PlayerHide();
-        if(_input.spiritVision) GameController.instance.SpiritVision();
-        _playerMovement.SetMoveDirection(_rb,  _moveSpeed);
+        if (_input.interact)
+        {
+            switch (GameController.instance.playerHidden)
+            {
+                case false:
+                    GameController.instance.PlayerHide();
+                    break;
+                case true:
+                    GameController.instance.PlayerHideExit();
+                    break;
+            }
+        }
+        if (!GameController.instance.freezeMovement)
+        {
+            if (_input.spiritVision) GameController.instance.SpiritVision();
+            _playerMovement.SetMoveDirection(_rb, _moveSpeed);
+        }
+        
         
     }
 }
