@@ -72,7 +72,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 2
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -87,7 +87,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 2
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -149,21 +149,130 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
-  tileSetImportData: []
+  tileSetImportData:
+  - name: Front
+    originalName: 
+    pivot: {x: 0.5, y: 2.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 160
+      width: 960
+      height: 15
+    spriteID: a53c958f36dda38439c136d00452765a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 160}
+  - name: Houses
+    originalName: 
+    pivot: {x: 0.5, y: 0.27027026}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 960
+      height: 148
+    spriteID: 63ca4d63ae5af03429a462715780bed0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 15, y: 0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 972
+      y: 4
+      width: 32
+      height: 64
+    spriteID: 4bd835e3c0fdf594d9e531da789d84cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 972, y: 4}
+  - name: Tileset_0_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 972
+      y: 76
+      width: 32
+      height: 32
+    spriteID: 9e68a35cb1ff53743a874a5a1a2cccc2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 972, y: 76}
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2353314567
+      value0: 1588531317
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: City_background_tile_01
-    layerFlags: 0
+    name: Front
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: City_background_tile_01
+    - name: Front
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 960
+        height: 15
+      spriteId: a53c958f36dda38439c136d00452765a
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: -1
+  - layerIndex: 1
+    uuid:
+      value0: 3135861487
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Houses
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Houses
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,12 +280,74 @@ ScriptedImporter:
         y: -21
         width: 960
         height: 148
-      spriteId: cc2432a3834b7f24b821796c121149fa
+      spriteId: 63ca4d63ae5af03429a462715780bed0
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
-  tileSets: []
+  - layerIndex: 2
+    uuid:
+      value0: 2048707161
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Tilemap 1
+    layerFlags: 3
+    layerType: 2
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    tileCells:
+    - layerIndex: 2
+      frameIndex: 0
+      cellRect:
+        x: 384
+        y: 0
+        width: 18
+        height: 2
+      tileIndices: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+    tileSetIndex: 0
+    parentIndex: -1
+  - layerIndex: 3
+    uuid:
+      value0: 4287466680
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Layer 1
+    layerFlags: 1
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 1
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 10
+        width: 32
+        height: 64
+      spriteId: 4bd835e3c0fdf594d9e531da789d84cd
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: -1
+  tileSets:
+  - id: 0
+    name: Tileset_0
+    tileSize:
+      x: 32
+      y: 32
+    tiles:
+    - tileId: 1
+      size:
+        x: 32
+        y: 32
+      name: Tileset_0_1
+      spriteId: 9e68a35cb1ff53743a874a5a1a2cccc2
+    guid: -1102077067
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -205,5 +376,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 960, y: 127}
+  canvasSize: {x: 960, y: 80}
   previousTextureSize: {x: 1024, y: 256}
