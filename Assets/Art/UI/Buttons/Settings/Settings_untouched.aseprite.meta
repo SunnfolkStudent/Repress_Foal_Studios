@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2c19b626c027d794aa2ae5e57fae2d1c
+guid: 72b6631a67c7e5c449de4c6c317a19de
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 32
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 639092648545852925
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Go_to_main_menu_untouched
+  - name: Settings_untouched
     originalName: 
-    pivot: {x: 0.5067567, y: -0.094339624}
+    pivot: {x: 0.47933882, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 148
-      height: 53
-    spriteID: 679b3072d5a788d44bff330f323136ac
+      width: 121
+      height: 26
+    spriteID: bf84100c1d40b92498035f95cdceb674
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,33 +153,57 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2434404874
+      value0: 882185321
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Go_to_main_menu_untouched
+    name: Settings_untouched
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Go_to_main_menu_untouched
+    - name: Settings_untouched
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 5
-        y: 5
-        width: 148
-        height: 53
-      spriteId: 679b3072d5a788d44bff330f323136ac
+        x: 6
+        y: 2
+        width: 121
+        height: 26
+      spriteId: bf84100c1d40b92498035f95cdceb674
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 160, y: 64}
+  canvasSize: {x: 128, y: 32}
   previousTextureSize: {x: 256, y: 64}
