@@ -569,6 +569,35 @@ Transform:
   - {fileID: 1503862059}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &901732229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 654108305553639772, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
+  m_PrefabInstance: {fileID: 5002512706389544943}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &901732234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901732229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
+  m_ComponentVersion: 1
+  m_AssetsPPU: 32
+  m_RefResolutionX: 480
+  m_RefResolutionY: 270
+  m_CropFrame: 0
+  m_GridSnapping: 0
+  m_FilterMode: 0
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &922050641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,18 +1476,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5395029339251500561, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5947101452083130545, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5947101452083130545, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6836608808830446137, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.33119
@@ -1499,21 +1516,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7797748979075424880, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: filterColor.a
-      value: 0.65882355
-      objectReference: {fileID: 0}
-    - target: {fileID: 7797748979075424880, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: filterColor.b
-      value: 0.9175441
-      objectReference: {fileID: 0}
-    - target: {fileID: 7797748979075424880, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: filterColor.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 7797748979075424880, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: filterColor.r
-      value: 0.6067551
+    - target: {fileID: 7060388573137489461, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
+      propertyPath: orthographic size
+      value: 4.21875
       objectReference: {fileID: 0}
     - target: {fileID: 7797748979075424880, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
       propertyPath: screenFilterVolume
@@ -1522,7 +1527,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 654108305553639772, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 901732234}
   m_SourcePrefab: {fileID: 100100000, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
 --- !u!1001 &7713165811893559282
 PrefabInstance:
