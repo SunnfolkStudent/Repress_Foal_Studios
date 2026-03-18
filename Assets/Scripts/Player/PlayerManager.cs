@@ -7,7 +7,6 @@ public class PlayerManager : MonoBehaviour
     private InputManager _input;
     private PlayerMovement _playerMovement;
     private Rigidbody2D _rb;
-    
     [SerializeField] private float _moveSpeed = 5f;
     
     

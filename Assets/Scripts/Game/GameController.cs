@@ -29,41 +29,58 @@ public class GameController : MonoBehaviour
            }
        }
 
+   #region PLAYER MECHANICS
+
+    public event Action onPlayerHide;
+    public void PlayerHide()
+    {
+      if (onPlayerHide != null)
+      {
+          onPlayerHide();
+      }
+    }
+    public event Action onPlayerHideExit;
+
+    public void PlayerHideExit()
+    {
+      if (onPlayerHideExit != null)
+      {
+          onPlayerHideExit();
+      }
+    }
+
+    public event Action onSpiritVision;
+    public void SpiritVision()
+    {
+      if (onSpiritVision != null)
+      {
+          onSpiritVision();
+      }
+    }
+
+   #endregion
+
+   #region WIN/LOSE CONDITION
+    public event Action onFailStateActive;
+       public void FailStateActive()
+       {
+           if (onFailStateActive != null)
+           {
+               Debug.Log("FailstateActive");
+               onFailStateActive();
+           }
+       }
+       public event Action onWinstateActive;
+
+       public void WinStateActive()
+       {
+           if (onWinstateActive != null)
+           {
+               Debug.Log("WinstateActive");
+               onWinstateActive();
+           }
+       }
+   #endregion
    
-   public event Action onPlayerHide;
-   public void PlayerHide()
-   {
-       if (onPlayerHide != null)
-       {
-           onPlayerHide();
-       }
-   }
-   public event Action onPlayerHideExit;
-
-   public void PlayerHideExit()
-   {
-       if (onPlayerHideExit != null)
-       {
-           onPlayerHideExit();
-       }
-   }
-
-   public event Action onSpiritVision;
-   public void SpiritVision()
-   {
-       if (onSpiritVision != null)
-       {
-           onSpiritVision();
-       }
-   }
-   public event Action onFailStateActive;
-   public void FailStateActive()
-   {
-       if (onFailStateActive != null)
-       {
-           Debug.Log("FailstateActive");
-           onFailStateActive();
-       }
-   }
 
 }
