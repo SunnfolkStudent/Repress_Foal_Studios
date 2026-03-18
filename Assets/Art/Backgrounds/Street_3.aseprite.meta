@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e13bb36eb86303418ec8095cb0bf347
+guid: 597bf218169cd9a4f818d3900d43a04b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639090106926563246
+  platformSettingsDirtyTick: 639094267951416722
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Street
+  - name: Street_3
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 480
       height: 192
-    spriteID: 190edff84a40fcc49a05be5de41810ec
+    spriteID: 9291c62486984864abea6891676525ce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,17 +153,17 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3411803393
+      value0: 2036107485
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Street
+    name: Street_3
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Street
+    - name: Street_3
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,7 +171,7 @@ ScriptedImporter:
         y: 0
         width: 480
         height: 192
-      spriteId: 190edff84a40fcc49a05be5de41810ec
+      spriteId: 9291c62486984864abea6891676525ce
     linkedCells: []
     tileCells: []
     tileSetIndex: 0

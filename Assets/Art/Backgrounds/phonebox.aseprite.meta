@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e13bb36eb86303418ec8095cb0bf347
+guid: aed54ec880270f745b7a4dc5e701b3c5
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 32
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639090106926563246
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Street
+  - name: phonebox
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 480
-      height: 192
-    spriteID: 190edff84a40fcc49a05be5de41810ec
+      width: 28
+      height: 61
+    spriteID: c5c72954fd3a6fe469d9d177f44c011c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,57 +153,33 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3411803393
+      value0: 2775243917
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Street
+    name: phonebox
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Street
+    - name: phonebox
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 480
-        height: 192
-      spriteId: 190edff84a40fcc49a05be5de41810ec
+        width: 28
+        height: 61
+      spriteId: c5c72954fd3a6fe469d9d177f44c011c
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 480, y: 192}
-  previousTextureSize: {x: 512, y: 256}
+  canvasSize: {x: 28, y: 61}
+  previousTextureSize: {x: 64, y: 128}

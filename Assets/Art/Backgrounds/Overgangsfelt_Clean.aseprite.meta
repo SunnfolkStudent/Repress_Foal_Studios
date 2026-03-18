@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Overgangsfelt_Clean
     originalName: 
-    pivot: {x: 0.315625, y: 0}
+    pivot: {x: 0.2955975, y: -0.013513514}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,8 +137,8 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 160
-      height: 209
+      width: 159
+      height: 222
     spriteID: dd7f846b6ccaff64ea1298de01bba8da
     spriteBone: []
     spriteOutline: []
@@ -167,10 +167,10 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 160
-        height: 209
+        x: 1
+        y: 3
+        width: 159
+        height: 222
       spriteId: dd7f846b6ccaff64ea1298de01bba8da
     linkedCells: []
     tileCells: []
@@ -205,5 +205,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 101, y: 48}
+  canvasSize: {x: 96, y: 64}
   previousTextureSize: {x: 256, y: 256}

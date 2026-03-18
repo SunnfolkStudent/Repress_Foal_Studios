@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e13bb36eb86303418ec8095cb0bf347
+guid: 772b7d0e01c150849992820a8ead924b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639090106926563246
+  platformSettingsDirtyTick: 639094270696481818
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Street
+  - name: phonebox
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 480
-      height: 192
-    spriteID: 190edff84a40fcc49a05be5de41810ec
+      width: 28
+      height: 61
+    spriteID: 266957f16c7fea14c9c27b7a0d790fa8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3411803393
+      value0: 2775243917
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Street
+    name: phonebox
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Street
+    - name: phonebox
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 480
-        height: 192
-      spriteId: 190edff84a40fcc49a05be5de41810ec
+        width: 28
+        height: 61
+      spriteId: 266957f16c7fea14c9c27b7a0d790fa8
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -205,5 +205,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 480, y: 192}
-  previousTextureSize: {x: 512, y: 256}
+  canvasSize: {x: 28, y: 61}
+  previousTextureSize: {x: 64, y: 128}
