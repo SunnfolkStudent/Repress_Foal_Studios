@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+using System.Collections;
 public class FailManager : MonoBehaviour
 {
     
@@ -9,6 +11,7 @@ public class FailManager : MonoBehaviour
     private void Start()
     {
         GameController.instance.onFailStateActive += ActivateFailMenu;
+        RestartOrMenuCanvas.gameObject.SetActive(false);
     }
 
     private void ActivateFailMenu()
@@ -20,7 +23,8 @@ public class FailManager : MonoBehaviour
     
     public void ReturnToChekpoint()
     {
-        RestartOrMenuCanvas.gameObject.SetActive(false);
+        GameObject Restart = GameObject.Find("RestartOrMenuCanvas");
+                Restart.SetActive(false);
         GameController.instance.failStateTriggered = false;
         GameController.instance.freezeMovement = false;
     
@@ -32,8 +36,12 @@ public class FailManager : MonoBehaviour
         }
         else
         {
+            
+            Restart.SetActive(false);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        //RestartOrMenuCanvas.gameObject.SetActive(false);
+        
     }
 
     private void ReturnToMenu()
