@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 984366937006406594}
   - component: {fileID: 5092892567562488138}
+  - component: {fileID: 45106777670176664}
+  - component: {fileID: 6265528961497883346}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -46,6 +48,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameController
   failStateTriggered: 0
   winStateTriggered: 0
-  playerIsHidden: 0
+  freezeMovement: 0
+  playerHidden: 0
+  playerVisionOn: 0
+  gameIsPaused: 0
   activeCheckpointPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &45106777670176664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979210650795044409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ed7efc9a31f3544c9bb40c68be2636c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  isPaused: 0
+  pauseMenu: {fileID: 0}
+--- !u!114 &6265528961497883346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979210650795044409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff54a767d3994848933d5f5d71bf442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FailManager
   RestartOrMenuCanvas: {fileID: 0}

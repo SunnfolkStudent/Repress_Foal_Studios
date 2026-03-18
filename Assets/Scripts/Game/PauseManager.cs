@@ -5,6 +5,7 @@ public class PauseManager : MonoBehaviour
 {
     [SerializeField] private bool isPaused;
     [SerializeField] private Canvas pauseMenu;
+    
     private void Start()
     {
         

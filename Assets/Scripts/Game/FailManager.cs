@@ -28,10 +28,11 @@ public class FailManager : MonoBehaviour
         if (player != null && GameController.instance.activeCheckpointPosition != Vector3.zero)
         {
             player.transform.position = GameController.instance.activeCheckpointPosition;
+            GameController.instance.PlayerHide();
         }
         else
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
