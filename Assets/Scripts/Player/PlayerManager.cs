@@ -22,6 +22,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (_input.interact)
         {
+            // GAMECONTROLLER PREFAB NEEDS TO BE IN THE SCENE
             switch (GameController.instance.playerHidden)
             {
                 case false:

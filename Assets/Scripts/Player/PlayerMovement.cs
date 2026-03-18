@@ -61,6 +61,9 @@ public class PlayerMovement : MonoBehaviour
                 _rb.linearVelocityX = 0;
                 _rb.linearVelocityY = 0;
             }
+            
+            //player rotation
+            transform.rotation = Quaternion.LookRotation(_rb.linearVelocity);
         }
     
         private void UpdateKeyboardMovement(Rigidbody2D _rb, float moveSpeed)
@@ -94,6 +97,11 @@ public class PlayerMovement : MonoBehaviour
             }
             MoveDirection = directions.Count > 0 ? directions.Last() : Vector2.zero;
             _rb.linearVelocity = MoveDirection * moveSpeed;
+
+            Vector3 directionToTarget = MoveDirection;
+            float angle = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg;
+            
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         }
 
     #endregion

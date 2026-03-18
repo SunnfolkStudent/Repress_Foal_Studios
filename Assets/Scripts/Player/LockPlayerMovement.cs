@@ -20,12 +20,12 @@ public class LockPlayerMovement : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         Rigidbody2D _rb = player.GetComponent<Rigidbody2D>();
         
-        GameController.instance.freezeMovement = true;
+        if (GameController.instance.playerHidden) GameController.instance.freezeMovement = true;
         _rb.linearVelocity = Vector2.zero;
     }
 
     private void UnlockMovement()
     {
-        GameController.instance.freezeMovement = false;
+          GameController.instance.freezeMovement = false;
     }
 }
