@@ -72,7 +72,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 2
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -87,7 +87,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   asepriteImporterSettings:
-    fileImportMode: 2
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639092584568680275
+  platformSettingsDirtyTick: 639094275304693813
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -234,45 +234,41 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 972, y: 76}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 480, y: 5.714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 972
+      y: 116
+      width: 1
+      height: 7
+    spriteID: 930b8f0721dcdd043a4b43e91972faad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 972, y: 116}
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1588531317
+      value0: 2353314567
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Front
-    layerFlags: 3
+    name: City_background_tile_01
+    layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Front
-      frameIndex: 0
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 0
-        width: 960
-        height: 15
-      spriteId: a53c958f36dda38439c136d00452765a
-    linkedCells: []
-    tileCells: []
-    tileSetIndex: 0
-    parentIndex: -1
-  - layerIndex: 1
-    uuid:
-      value0: 3135861487
-      value1: 0
-      value2: 0
-      value3: 0
-    guid: 0
-    name: Houses
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Houses
+    - name: City_background_tile_01
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -280,56 +276,7 @@ ScriptedImporter:
         y: -21
         width: 960
         height: 148
-      spriteId: 63ca4d63ae5af03429a462715780bed0
-    linkedCells: []
-    tileCells: []
-    tileSetIndex: 0
-    parentIndex: -1
-  - layerIndex: 2
-    uuid:
-      value0: 2048707161
-      value1: 0
-      value2: 0
-      value3: 0
-    guid: 0
-    name: Tilemap 1
-    layerFlags: 3
-    layerType: 2
-    blendMode: 0
-    cells: []
-    linkedCells: []
-    tileCells:
-    - layerIndex: 2
-      frameIndex: 0
-      cellRect:
-        x: 384
-        y: 0
-        width: 18
-        height: 2
-      tileIndices: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-    tileSetIndex: 0
-    parentIndex: -1
-  - layerIndex: 3
-    uuid:
-      value0: 4287466680
-      value1: 0
-      value2: 0
-      value3: 0
-    guid: 0
-    name: Layer 1
-    layerFlags: 1
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Layer 1
-      frameIndex: 0
-      additiveSortOrder: 0
-      cellRect:
-        x: 32
-        y: 10
-        width: 32
-        height: 64
-      spriteId: 4bd835e3c0fdf594d9e531da789d84cd
+      spriteId: 427f5e900ce775d46bb2f0d96cfd47a1
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
