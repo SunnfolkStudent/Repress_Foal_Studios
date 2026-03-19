@@ -8,6 +8,8 @@ public class PlayerSpiritVision : MonoBehaviour
 
     public Volume screenFilterVolume;
     private ColorAdjustments _colorAdjustments;
+    private Vignette _vignette;
+    private ChromaticAberration _chromaticAberration;
     public Color filterColor;
     public Color originalfilterColor;
     

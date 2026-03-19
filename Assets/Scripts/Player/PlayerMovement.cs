@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 _rb.linearVelocityX = 0;
                 _rb.linearVelocityY = 0;
-                _animator.SetBool("isWalking", true);
+                _animator.SetBool("isWalking", false);
             }
             
             
@@ -98,15 +98,27 @@ public class PlayerMovement : MonoBehaviour
             }
             MoveDirection = directions.Count > 0 ? directions.Last() : Vector2.zero;
             _rb.linearVelocity = MoveDirection * moveSpeed;
-
-            Vector3 directionToTarget = MoveDirection;
-            float angle = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg;
             
+            
+            if (_rb.linearVelocity == Vector2.zero)
+            {
+                Debug.Log(MoveDirection.x);
+                _animator.SetBool("isWalking", false);
+                
+                
+            }
+            else if (_rb.linearVelocity != Vector2.zero)
+            {
+                _animator.SetBool("isWalking", true);
+                _animator.SetFloat("lastInputX", _rb.linearVelocity.x);
+                _animator.SetFloat("lastInputY", _rb.linearVelocity.y);
+            }
             
         }
 
     #endregion
 
+    
 
     
 }
