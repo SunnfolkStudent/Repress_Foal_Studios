@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("4 Directional Move")]
     public Vector2 MoveDirection;
+    private Animator _animator;
     private InputManager _input;
     private bool[] LRUD = new []{false, false, false, false}; // Left, Right, Up, Down bools
     private Vector2[] moveDirection = new [] {new Vector2(-1,0), new Vector2(1, 0), new Vector2(0,1), new Vector2(0, -1) }; // L R U D Directions
@@ -17,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         _input =  GetComponent<InputManager>();
-        
+        _animator = GetComponent<Animator>();
     }
 
     #region MOVEMENT
@@ -60,10 +61,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 _rb.linearVelocityX = 0;
                 _rb.linearVelocityY = 0;
+                _animator.SetBool("isWalking", true);
             }
             
-            //player rotation
-            transform.rotation = Quaternion.LookRotation(_rb.linearVelocity);
+            
         }
     
         private void UpdateKeyboardMovement(Rigidbody2D _rb, float moveSpeed)
@@ -101,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
             Vector3 directionToTarget = MoveDirection;
             float angle = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg;
             
-            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            
         }
 
     #endregion

@@ -485,10 +485,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 396466966301217859, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: _interactRadius
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2366550707523027133, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -532,14 +528,6 @@ PrefabInstance:
     - target: {fileID: 6836608808830446137, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612948803871329031, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: m_RefResolutionX
-      value: 480
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612948803871329031, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
-      propertyPath: m_RefResolutionY
-      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 7797748979075424880, guid: de2f9960cb2355c41abbf8129e7ad64e, type: 3}
       propertyPath: screenFilterVolume
