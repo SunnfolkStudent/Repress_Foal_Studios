@@ -9,10 +9,9 @@ public class GameController : MonoBehaviour
     public bool failStateTriggered;
     public bool winStateTriggered;
 
-    public bool freezeMovement = false;
+    public bool freezeMovement;
     //Mechanics
     public bool playerHidden;
-    public bool playerVisionOn;
     public bool gameIsPaused;
     public Vector3 activeCheckpointPosition;
       
@@ -49,13 +48,21 @@ public class GameController : MonoBehaviour
       }
     }
 
-    public event Action onSpiritVision;
-    public void SpiritVision()
+    public event Action onSpiritVisionActivated;
+    public void SpiritVisionActivated()
     {
-      if (onSpiritVision != null)
+      if (onSpiritVisionActivated != null)
       {
-          onSpiritVision();
+          onSpiritVisionActivated();
       }
+    }
+    public event Action onSpiritVisionDeactivated;
+    public void SpiritVisionDeactivated()
+    {
+        if (onSpiritVisionDeactivated != null)
+        {
+            onSpiritVisionDeactivated();
+        }
     }
 
    #endregion

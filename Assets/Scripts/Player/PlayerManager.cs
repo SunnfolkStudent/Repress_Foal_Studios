@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
     private PlayerMovement _playerMovement;
     private Rigidbody2D _rb;
     [SerializeField] private float _moveSpeed = 5f;
+    [SerializeField] private bool ToggleOnSpiritVision;
     
     
     void Start()
@@ -20,23 +21,42 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        if (_input.interact)
+        if (!GameController.instance.gameIsPaused)
         {
-            // GAMECONTROLLER PREFAB NEEDS TO BE IN THE SCENE
-            switch (GameController.instance.playerHidden)
+            if (_input.interact)
             {
-                case false:
-                    GameController.instance.PlayerHide();
-                    break;
-                case true:
-                    GameController.instance.PlayerHideExit();
-                    break;
+                // GAMECONTROLLER PREFAB NEEDS TO BE IN THE SCENE
+                switch (GameController.instance.playerHidden)
+                {
+                    case false:
+                        GameController.instance.PlayerHide();
+                        break;
+                    case true:
+                        GameController.instance.PlayerHideExit();
+                        break;
+                }
             }
-        }
-        if (!GameController.instance.freezeMovement)
-        {
-            if (_input.spiritVision) GameController.instance.SpiritVision();
-            _playerMovement.SetMoveDirection(_rb, _moveSpeed);
+            if (_input.spiritVision)
+            {
+                switch (ToggleOnSpiritVision)
+                {
+                    case true:
+                        GameController.instance.SpiritVisionDeactivated();
+                        ToggleOnSpiritVision = false;
+                        break;
+                    case false:
+                        GameController.instance.SpiritVisionActivated();
+                        ToggleOnSpiritVision = true;
+                        break;
+                }
+            }
+
+            if (!GameController.instance.freezeMovement)
+            {
+
+
+                _playerMovement.SetMoveDirection(_rb, _moveSpeed);
+            }
         }
         
         

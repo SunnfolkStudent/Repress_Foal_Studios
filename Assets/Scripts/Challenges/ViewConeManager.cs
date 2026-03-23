@@ -2,26 +2,26 @@ using UnityEngine;
 
 public class ViewConeManager : MonoBehaviour
 {
-    private GameObject _viewCone;
+    private SpriteRenderer _viewCone;
     
     void Start()
     {
         
-        _viewCone = this.gameObject.transform.GetChild(0).gameObject;
-        GameController.instance.onSpiritVision += UpdateViewConeVisibility;
+        _viewCone = this.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
+        _viewCone.GetComponent<SpriteRenderer>().enabled = false;
+        GameController.instance.onSpiritVisionActivated += ActivateConeVisibility;
+        GameController.instance.onSpiritVisionDeactivated += DeactivateConeVisibility;
     }
 
 
-    void UpdateViewConeVisibility()
+    void ActivateConeVisibility()
     {
-        if (GameController.instance.playerVisionOn)
-        {
-            _viewCone.GetComponent<SpriteRenderer>().enabled = true;
-        }
-        else
-        {
-            _viewCone.GetComponent<SpriteRenderer>().enabled = false;
-        }
+        _viewCone.enabled = true;
+    }
+
+    void DeactivateConeVisibility()
+    {
+        _viewCone.enabled = false;
     }
     
     

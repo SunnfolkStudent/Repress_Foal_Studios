@@ -4,7 +4,7 @@ namespace Player
     using UnityEngine;
     public class PlayerInteract  : MonoBehaviour
     {
-        [SerializeField] private float _interactRadius = 3f;
+       public float interactRadius = 3f;
 
         private Vector3 _enterPosition;
         private void Start()
@@ -18,7 +18,7 @@ namespace Player
         private void UpdateHide()
         {
             _enterPosition = transform.position;
-            Collider2D hit = Physics2D.OverlapCircle(transform.position, _interactRadius, 1 << 6);
+            Collider2D hit = Physics2D.OverlapCircle(transform.position, interactRadius, 1 << 6);
             if (hit != null)
             {
                 var targetPosition = hit.transform.position;

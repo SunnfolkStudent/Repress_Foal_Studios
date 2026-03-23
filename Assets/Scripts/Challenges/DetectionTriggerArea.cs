@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class DetectionTriggerArea : MonoBehaviour
 {
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
      

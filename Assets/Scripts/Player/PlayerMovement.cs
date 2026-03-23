@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _input =  GetComponent<InputManager>();
         _animator = GetComponent<Animator>();
+        
     }
 
     #region MOVEMENT
@@ -99,10 +100,21 @@ public class PlayerMovement : MonoBehaviour
             MoveDirection = directions.Count > 0 ? directions.Last() : Vector2.zero;
             _rb.linearVelocity = MoveDirection * moveSpeed;
             
+            _animator.SetFloat("lastInputX" , _rb.linearVelocity.x);
+            _animator.SetFloat("lastInputY" , _rb.linearVelocity.y);
             
-            if (_rb.linearVelocity == Vector2.zero)
+            if( _rb.linearVelocity != Vector2.zero)_animator.SetBool("isWalking", true);
+            else  _animator.SetBool("isWalking", false);
+            
+            
+        }
+
+    #endregion
+
+    
+/* if (_rb.linearVelocity == Vector2.zero)
             {
-                Debug.Log(MoveDirection.x);
+                
                 _animator.SetBool("isWalking", false);
                 
                 
@@ -112,13 +124,6 @@ public class PlayerMovement : MonoBehaviour
                 _animator.SetBool("isWalking", true);
                 _animator.SetFloat("lastInputX", _rb.linearVelocity.x);
                 _animator.SetFloat("lastInputY", _rb.linearVelocity.y);
-            }
-            
-        }
-
-    #endregion
-
-    
-
+            }*/
     
 }
