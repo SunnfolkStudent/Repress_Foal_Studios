@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa1517c3a75641b38860853266f3bb16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerInteract
-  interactRadius: 3
+  interactRadius: 1
 --- !u!114 &5860359503980365196
 MonoBehaviour:
   m_ObjectHideFlags: 0
