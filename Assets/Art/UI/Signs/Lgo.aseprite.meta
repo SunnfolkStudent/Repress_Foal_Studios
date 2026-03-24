@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 73d21ec82a39a8246a7d28ff4c47563d
+guid: c370509798e35cd4a89f5fa192c4d94c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 32
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639099452083234761
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: City_background_tile_02
+  - name: Lgo
     originalName: 
-    pivot: {x: 0.5, y: 0.21000002}
+    pivot: {x: 0.4847328, y: -0.016260162}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 960
-      height: 100
-    spriteID: 76fef78a8034a60438c4d046ca780a63
+      width: 262
+      height: 123
+    spriteID: eb345d6933ec0e047bacd881794a2c04
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,57 +153,33 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2353314566
+      value0: 1858830064
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: City_background_tile_02
+    name: Lgo
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: City_background_tile_02
+    - name: Lgo
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
-        y: -21
-        width: 960
-        height: 100
-      spriteId: 76fef78a8034a60438c4d046ca780a63
+        x: 17
+        y: 2
+        width: 262
+        height: 123
+      spriteId: eb345d6933ec0e047bacd881794a2c04
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 960, y: 79}
-  previousTextureSize: {x: 1024, y: 128}
+  canvasSize: {x: 288, y: 128}
+  previousTextureSize: {x: 512, y: 256}

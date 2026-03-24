@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 73d21ec82a39a8246a7d28ff4c47563d
+guid: 3bb93466ab2f28d498c1b4c8f4bcf667
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639099452083234761
+  platformSettingsDirtyTick: 639099457306275359
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: City_background_tile_02
+  - name: Menu_background
     originalName: 
-    pivot: {x: 0.5, y: 0.21000002}
+    pivot: {x: 0.49081925, y: 0.025270756}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 960
-      height: 100
-    spriteID: 76fef78a8034a60438c4d046ca780a63
+      width: 1416
+      height: 277
+    spriteID: 43a32fa1d87ce7a4fb90cc6dea8ffcd8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2353314566
+      value0: 945295498
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: City_background_tile_02
+    name: Menu_background
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: City_background_tile_02
+    - name: Menu_background
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
-        y: -21
-        width: 960
-        height: 100
-      spriteId: 76fef78a8034a60438c4d046ca780a63
+        x: -455
+        y: -7
+        width: 1416
+        height: 277
+      spriteId: 43a32fa1d87ce7a4fb90cc6dea8ffcd8
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -205,5 +205,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 960, y: 79}
-  previousTextureSize: {x: 1024, y: 128}
+  canvasSize: {x: 480, y: 270}
+  previousTextureSize: {x: 2048, y: 512}
