@@ -48,7 +48,6 @@ public class FailManager : MonoBehaviour
     {
         RestartOrMenuCanvas.gameObject.SetActive(false);
         GameController.instance.failStateTriggered = false;
-        Debug.Log("No menu scene to load");
-        //SceneManager.LoadScene("Scenes/MenuScene");
+        SceneManager.LoadScene("Scenes/Main_Menu");
     }
 }
