@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1b3e7fb5fbc8098449526e737c5847b2
+=======
+guid: 2792f579a47a1c940af3f825baa066cc
+>>>>>>> 4d6aef0e155467e3031796ceb3ef8b073c0a2f84
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +40,11 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
     spritePixelsToUnits: 100
+=======
+    spritePixelsToUnits: 32
+>>>>>>> 4d6aef0e155467e3031796ceb3ef8b073c0a2f84
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -102,7 +110,11 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
+<<<<<<< HEAD
   platformSettingsDirtyTick: 0
+=======
+  platformSettingsDirtyTick: 639099453449268076
+>>>>>>> 4d6aef0e155467e3031796ceb3ef8b073c0a2f84
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -139,7 +151,11 @@ ScriptedImporter:
       y: 4
       width: 374
       height: 280
+<<<<<<< HEAD
     spriteID: 466bff1964602444ca2fb85aa3432904
+=======
+    spriteID: 415d0acbd7a08454abe635f91a118505
+>>>>>>> 4d6aef0e155467e3031796ceb3ef8b073c0a2f84
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -171,13 +187,45 @@ ScriptedImporter:
         y: 0
         width: 374
         height: 280
+<<<<<<< HEAD
       spriteId: 466bff1964602444ca2fb85aa3432904
+=======
+      spriteId: 415d0acbd7a08454abe635f91a118505
+>>>>>>> 4d6aef0e155467e3031796ceb3ef8b073c0a2f84
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
+<<<<<<< HEAD
   platformSettings: []
+=======
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+>>>>>>> 4d6aef0e155467e3031796ceb3ef8b073c0a2f84
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
