@@ -1,11 +1,16 @@
+using System;
 using Player;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerInteract))]
 public class PlayerInteractOutline : MonoBehaviour
 {
+    private PlayerInteract _playerInteract;
     [SerializeField] private float _outlineSize = 1f;
-    
+
+    private void Start()
+    {
+        _playerInteract = GetComponentInParent<PlayerInteract>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

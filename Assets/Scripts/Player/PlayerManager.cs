@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
 {
     private InputManager _input;
     private PlayerMovement _playerMovement;
+    private PlayerInteract _playerInteract;
     private Rigidbody2D _rb;
     [SerializeField] private float _moveSpeed = 5f;
     [SerializeField] private bool ToggleOnSpiritVision;
@@ -15,6 +16,7 @@ public class PlayerManager : MonoBehaviour
     {
         _input = GetComponent<InputManager>();
         _playerMovement = GetComponent<PlayerMovement>();
+        _playerInteract = GetComponent<PlayerInteract>();
         _rb = GetComponent<Rigidbody2D>();
     }
     
@@ -29,10 +31,10 @@ public class PlayerManager : MonoBehaviour
                 switch (GameController.instance.playerHidden)
                 {
                     case false:
-                        GameController.instance.PlayerHide();
+                        _playerInteract.UpdateHide();
                         break;
                     case true:
-                        GameController.instance.PlayerHideExit();
+                        _playerInteract.UpdateHideExit();
                         break;
                 }
             }
@@ -53,8 +55,6 @@ public class PlayerManager : MonoBehaviour
 
             if (!GameController.instance.freezeMovement)
             {
-
-
                 _playerMovement.SetMoveDirection(_rb, _moveSpeed);
             }
         }

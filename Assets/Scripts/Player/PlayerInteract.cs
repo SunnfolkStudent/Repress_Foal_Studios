@@ -7,15 +7,8 @@ namespace Player
        public float interactRadius = 3f;
 
         private Vector3 _enterPosition;
-        private void Start()
-        {
-            
-            GameController.instance.onPlayerHide += UpdateHide;
-            GameController.instance.onPlayerHideExit += UpdateHideExit;
 
-        }
-
-        private void UpdateHide()
+        public void UpdateHide()
         {
             _enterPosition = transform.position;
             Collider2D hit = Physics2D.OverlapCircle(transform.position, interactRadius, 1 << 6);
@@ -25,17 +18,18 @@ namespace Player
                 transform.position = targetPosition;
                 
                 GameController.instance.playerHidden = true;
-                
+                GameController.instance.PlayerHide();
                 Debug.Log ("the player is hidden");
             }
            
             
         }
 
-        private void UpdateHideExit()
+        public void UpdateHideExit()
         {
             transform.position = _enterPosition;
             GameController.instance.playerHidden = false;
+            GameController.instance.PlayerHideExit();
             Debug.Log ("the player is not hidden");
         }
     }
