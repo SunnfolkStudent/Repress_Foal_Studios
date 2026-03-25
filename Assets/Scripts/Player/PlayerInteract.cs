@@ -6,7 +6,13 @@ namespace Player
     {
        public float interactRadius = 3f;
 
+       private SpriteRenderer _spriteRenderer;
         private Vector3 _enterPosition;
+
+        private void Start()
+        {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
 
         public void UpdateHide()
         {
@@ -16,7 +22,7 @@ namespace Player
             {
                 var targetPosition = hit.transform.position;
                 transform.position = targetPosition;
-                
+                _spriteRenderer.enabled = false;
                 GameController.instance.playerHidden = true;
                 GameController.instance.PlayerHide();
                 Debug.Log ("the player is hidden");
@@ -27,6 +33,7 @@ namespace Player
 
         public void UpdateHideExit()
         {
+            _spriteRenderer.enabled = true;
             transform.position = _enterPosition;
             GameController.instance.playerHidden = false;
             GameController.instance.PlayerHideExit();
